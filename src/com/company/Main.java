@@ -14,5 +14,14 @@ public class Main {
         n1.setNext(n2);
         n2.setNext(n3);
         n1.display();
+
+        LinkedList myList = new LinkedList();
+        myList.addItem(14);
+        myList.addItem(6);
+        myList.addItem(67);
+        myList.head.display();
+        myList.head.getNext().display();
+        myList.head.getNext().getNext().display();
+
     }
 }

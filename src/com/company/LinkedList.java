@@ -1,7 +1,7 @@
 package com.company;
 
 public class LinkedList {
-    private Node head;
+    public Node head; //keep this private but public just for now
 
     public LinkedList() {
         head = null;
