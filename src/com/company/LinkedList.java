@@ -6,6 +6,19 @@ public class LinkedList {
     public LinkedList() {
         head = null;
     }
+//The method LinkedList() loops through the list, creates a new node, links it to the previous value node, then takes another value and repeats the process again
+    public LinkedList(int[] values){
+        head = new Node(values[0]);
+        Node n = head;
+        for(int i = 1;i<values.length; i++) {
+            //this is a new node (called adding) that has the value we want.
+            Node adding = new Node(values[i]);
+            //this is setting the next link from previous node which links the new node into the linked-list chain.
+            n.setNext(adding);
+            n = n.getNext();
+
+        }
+    }
 
     public void addItem(int v) {
         Node n = new Node(v);
