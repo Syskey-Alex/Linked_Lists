@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Iterator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class Main {
        // myList.addItem(67);
         // TODO create display method that skips ahead automatically until it gets to the end without having to manually add each .getNext() pointer.
         // add if statement with a (while) or (for) loop
+
         myList.head.display();//first int
         myList.head.getNext().display();//second number
         myList.head.getNext().getNext().display();//third int

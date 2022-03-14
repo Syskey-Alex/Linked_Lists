@@ -1,7 +1,11 @@
 package com.company;
 
+import java.awt.*;
+import java.util.Iterator;
+
 public class LinkedList {
     public Node head; //keep this private but public just for now
+    private Node cursor;
 
     public LinkedList() {
         head = null;
@@ -40,6 +44,26 @@ public class LinkedList {
         }
 
 
+    }
+    //TODO fix hasNext so that its a boolean and that it checks whether the pointer is at the value.
+public boolean hasNext() {
+    Iterator itr = list.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+    return false;
+}
+public int size() {
+        int myList = myList.size();
+        for(int i = 0; i <items.length; i ++) {
+            //printing size of the array
+            System.out.println();
+        }
+}
+public int getNext() {
+        cursor = cursor.getNext();
+        return cursor.getValue();
     }
 }
 
