@@ -6,6 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 	//creating new nodes
+       System.out.println("My queue: ");
+       Queue myQueue = new Queue();
+     myQueue.printQueue(20);
+
+       for(int i = 0; i < 10; i++) {
+           for(int j=0; j < 10;j++);
+       }
+
         int[] data = {1,2,3,4,5,6,7,8,9,10};
         System.out.println("Linked List here: ");
 
